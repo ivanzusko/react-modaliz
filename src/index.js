@@ -8,6 +8,7 @@ const propTypes = {
     className:          PropTypes.string,
     conditionalRender:  PropTypes.bool,
     discardDefaults:    PropTypes.bool,
+    show:               PropTypes.bool,
     speed:              PropTypes.number,
     onClose:            PropTypes.func.isRequired,
 }
@@ -15,6 +16,7 @@ const propTypes = {
 const defaultProps = {
     conditionalRender:  false,
     discardDefaults:    false,
+    show:               false,
     speed:              100,
 }
 

@@ -36,6 +36,7 @@ Property | Type | isRequired | Default value | Description
 `conditionalRender` | boolean | `false` | `false` | in some cases, if you need conditional render (e.g.: `{ifSomethingTrue && <Modaliz></Modaliz>}`) you should add `conditionalRender` property to `Modaliz` component
 `discardDefaults` | boolean | `false` | `false` | Set it to be `true` if you very badly want to discard all default styles
 `onClose` | Function | `true` |  | Handler for closing the modal window
+`show` | boolean | `false` | `false` | flag responsible for showing Modal
 `speed` | number | `false` | `100` | Speed of the fading in effect
 
 

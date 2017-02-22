@@ -77,6 +77,7 @@
         className: _react.PropTypes.string,
         conditionalRender: _react.PropTypes.bool,
         discardDefaults: _react.PropTypes.bool,
+        show: _react.PropTypes.bool,
         speed: _react.PropTypes.number,
         onClose: _react.PropTypes.func.isRequired
     };
@@ -84,6 +85,7 @@
     var defaultProps = {
         conditionalRender: false,
         discardDefaults: false,
+        show: false,
         speed: 100
     };
 
@@ -178,7 +180,8 @@
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            zIndex: 1
                         },
                         overlay: {
                             position: 'absolute',
