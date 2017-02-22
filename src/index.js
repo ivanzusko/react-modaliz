@@ -97,7 +97,8 @@ class Modaliz extends Component {
                     display:        'flex',
                     alignItems:     'center',
                     justifyContent: 'center',
-                    cursor:         'pointer'
+                    cursor:         'pointer',
+                    zIndex:         1,
                 },
                 overlay: {
                     position:           'absolute',
