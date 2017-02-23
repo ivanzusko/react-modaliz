@@ -1,5 +1,8 @@
 # React Modaliz
-React component which provide nice and simple modal pop-up window
+React component which provide nice and simple modal popup window
+
+## Example
+https://ivanzusko.github.io/react-modaliz/
 
 ## Installation
 Just run
