@@ -78,7 +78,10 @@
         conditionalRender: _react.PropTypes.bool,
         discardDefaults: _react.PropTypes.bool,
         show: _react.PropTypes.bool,
+        simple: _react.PropTypes.bool,
         speed: _react.PropTypes.number,
+        text: _react.PropTypes.string,
+        title: _react.PropTypes.string,
         onClose: _react.PropTypes.func.isRequired
     };
 
@@ -86,7 +89,10 @@
         conditionalRender: false,
         discardDefaults: false,
         show: false,
-        speed: 100
+        simple: false,
+        speed: 100,
+        text: '',
+        title: ''
     };
 
     var Modaliz = function (_Component) {
@@ -220,7 +226,21 @@
                             },
                             '\xD7'
                         ),
-                        this.props.children
+                        this.props.simple && _react2.default.createElement(
+                            'h1',
+                            null,
+                            this.props.title
+                        ),
+                        this.props.simple && _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                this.props.text
+                            )
+                        ),
+                        !this.props.simple && this.props.children
                     ),
                     _react2.default.createElement('div', {
                         className: overlay,
