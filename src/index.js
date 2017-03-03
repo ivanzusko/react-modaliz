@@ -9,7 +9,10 @@ const propTypes = {
     conditionalRender:  PropTypes.bool,
     discardDefaults:    PropTypes.bool,
     show:               PropTypes.bool,
+    simple:             PropTypes.bool,
     speed:              PropTypes.number,
+    text:               PropTypes.string,
+    title:              PropTypes.string,
     onClose:            PropTypes.func.isRequired,
 }
 
@@ -17,7 +20,10 @@ const defaultProps = {
     conditionalRender:  false,
     discardDefaults:    false,
     show:               false,
+    simple:             false,
     speed:              100,
+    text:               '',
+    title:              '',
 }
 
 class Modaliz extends Component {
@@ -134,7 +140,20 @@ class Modaliz extends Component {
                     >
                         &times;
                     </div>
-                    {this.props.children}
+                    {
+                        this.props.simple &&
+                            <h1>{this.props.title}</h1>
+                    }
+                    {
+                        this.props.simple &&
+                            <div>
+                                <p>{this.props.text}</p>
+                            </div>
+                    }
+                    {
+                        !this.props.simple &&
+                            this.props.children
+                    }
                 </div>
                 <div
                     className={overlay}
