@@ -93,6 +93,7 @@ class Modaliz extends Component {
                     top:                '50%',
                     left:               '50%',
                     transform:          'translate(-50%, -50%)',
+                    padding:            '10px 20px',
                     zIndex:             1,
                 },
                 close: {
