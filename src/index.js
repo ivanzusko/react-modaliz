@@ -2,7 +2,8 @@
  * Modaliz
  */
 
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const propTypes = {
     className:          PropTypes.string,
